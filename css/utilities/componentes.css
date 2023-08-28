@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  padding: 0.88rem 2rem;
+  background: #13183f;
+  border-radius: 1.75rem;
+  color: var(--color-0);
+  font: 700 1.125rem/1.55 "Plus Jakarta Sans", sans-serif;
+}
+
+.button:hover {
+  background: #666ca3;
+}
+
+.button.secondary {
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.button.secondary:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.button.tertiary {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+.button.tertiary:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
