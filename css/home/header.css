@@ -1,0 +1,35 @@
+.header-bg {
+  background-color: var(--color-0);
+  background-image: url("../../images/image-hero-desktop@2x.webp");
+  background-repeat: no-repeat;
+  background-size: 991.631px;
+  background-position: right -292.63px top -107.13px;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-introduction {
+  padding-top: 10.75rem;
+  padding-bottom: 14.12rem;
+  display: grid;
+  justify-content: start;
+}
+
+.header-introduction h1 {
+  margin-bottom: 1.81rem;
+}
+
+.header-introduction p {
+  max-width: 35ch;
+  margin-bottom: 2.5rem;
+}
+
+.header-introduction a {
+  justify-self: start;
+}
