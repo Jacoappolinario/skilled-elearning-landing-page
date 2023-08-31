@@ -1,5 +1,4 @@
 .header-bg {
-  background-color: var(--color-0);
   background-image: url("../../images/image-hero-desktop@2x.webp");
   background-repeat: no-repeat;
   background-size: 991.631px;
@@ -14,8 +13,12 @@
   justify-content: space-between;
 }
 
+.header img {
+  width: 114px;
+}
+
 .header-introduction {
-  padding-top: 10.75rem;
+  padding-top: calc(10.75rem - 1.5rem);
   padding-bottom: 14.12rem;
   display: grid;
   justify-content: start;
@@ -32,4 +35,59 @@
 
 .header-introduction a {
   justify-self: start;
+}
+
+@media (max-width: 800px) {
+  .header-bg {
+    background-image: url("../../images/image-hero-tablet@2x.webp");
+    background-size: 640.714px;
+    background-position: right -255.71px top -65.13px;
+  }
+
+  .header img {
+    width: 89px;
+  }
+
+  .header-introduction {
+    padding-top: calc(6.19rem - 1.5rem);
+    padding-bottom: 11.63rem;
+  }
+
+  .header-introduction h1 {
+    margin-bottom: 1.56rem;
+  }
+
+  .header-introduction p {
+    margin-bottom: 1.56rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-bg {
+    background-image: none;
+  }
+
+  .header-introduction {
+    padding-top: calc(2.38rem - 1.5rem);
+    padding-bottom: calc(2.38rem - 1.5rem);
+  }
+
+  .header-introduction a {
+    margin-bottom: 1.88rem;
+  }
+
+  .header-introduction::after {
+    content: "";
+    display: block;
+    width: 327px;
+    height: 301px;
+    background-image: url("../../images/image-hero-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+  }
+
+  .header-introduction p {
+    margin-bottom: 2.5rem;
+  }
 }
