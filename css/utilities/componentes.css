@@ -45,12 +45,14 @@
     linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
   .container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
 
+@media (max-width: 800px) {
   .button {
     padding: 0.69rem 1.5rem;
     font: 700 1rem/1.75 "Plus Jakarta Sans", sans-serif;
