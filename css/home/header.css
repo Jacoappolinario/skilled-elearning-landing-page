@@ -2,7 +2,7 @@
   background-image: url("../../images/image-hero-desktop@2x.webp");
   background-repeat: no-repeat;
   background-size: 991.631px;
-  background-position: right -292.63px top -107.13px;
+  background-position: right -292.63px top -118px;
 }
 
 .header {
@@ -35,6 +35,13 @@
 
 .header-introduction a {
   justify-self: start;
+}
+
+@media (min-width: 1800px) {
+  .header-bg {
+    background-size: 1100px;
+    background-position: right -128px top -181px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -81,7 +88,7 @@
     display: block;
     width: 327px;
     height: 301px;
-    background-image: url("../../images/image-hero-mobile.webp");
+    background-image: url("../../images/image-hero-mobile@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     justify-self: center;
