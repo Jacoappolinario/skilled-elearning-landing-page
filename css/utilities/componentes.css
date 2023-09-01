@@ -45,6 +45,16 @@
     linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
 }
 
+.link {
+  display: inline-block;
+  color: var(--color-3);
+  font: 700 1.125rem/1.55 "Plus Jakarta Sans", sans-serif;
+}
+
+.link:hover {
+  color: var(--color-4);
+}
+
 @media (max-width: 1300px) {
   .container {
     padding-left: 2.5rem;
