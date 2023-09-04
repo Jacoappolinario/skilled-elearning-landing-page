@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem 1.87rem;
+  justify-items: center;
   padding-bottom: 8.75rem;
 }
 
@@ -33,7 +34,6 @@
 
 @media (max-width: 800px) {
   .courses ul {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem 0.63rem;
     padding-bottom: 5.37rem;
@@ -43,5 +43,24 @@
     width: 339px;
     height: 259px;
     padding: 3.5rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .courses ul {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .courses li {
+    width: 343px;
+    height: 259px;
+    padding: 3.5rem 1.81rem 2rem;
+  }
+
+  .courses li:first-child {
+    height: 120px;
+    padding: 1.5rem 1.81rem 2rem;
   }
 }
