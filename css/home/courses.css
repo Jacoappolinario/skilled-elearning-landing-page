@@ -1,4 +1,8 @@
-.courses ul {
+.courses-bg {
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+.courses {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem 1.87rem;
@@ -33,7 +37,7 @@
 }
 
 @media (max-width: 800px) {
-  .courses ul {
+  .courses {
     grid-template-columns: 1fr 1fr;
     gap: 3.5rem 0.63rem;
     padding-bottom: 5.37rem;
@@ -47,7 +51,7 @@
 }
 
 @media (max-width: 500px) {
-  .courses ul {
+  .courses {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     padding-bottom: 5rem;
