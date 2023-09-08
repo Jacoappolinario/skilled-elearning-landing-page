@@ -19,7 +19,7 @@
 
 .header-introduction {
   padding-top: calc(10.75rem - 1.5rem);
-  padding-bottom: 14.12rem;
+  padding-bottom: 15.62rem;
   display: grid;
   justify-content: start;
 }
@@ -63,7 +63,7 @@
 
   .header-introduction {
     padding-top: calc(6.19rem - 1.5rem);
-    padding-bottom: 11.63rem;
+    padding-bottom: 13.13rem;
   }
 
   .header-introduction h1 {
@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .header-bg {
     background-image: none;
   }
@@ -92,12 +92,19 @@
   .header-introduction::after {
     content: "";
     display: block;
-    width: 327px;
-    height: 301px;
+    width: 427px;
+    height: 401px;
     background-image: url("../../images/image-hero-mobile@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     justify-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-introduction::after {
+    width: 327px;
+    height: 301px;
   }
 
   .header-introduction p {
