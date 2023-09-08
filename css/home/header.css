@@ -1,9 +1,8 @@
 .header-bg {
-  background-color: var(--color-0);
   background-image: url("../../images/image-hero-desktop@2x.webp");
   background-repeat: no-repeat;
   background-size: 991.631px;
-  background-position: right -292.63px top -107.13px;
+  background-position: right -292.63px top -115px;
 }
 
 .header {
@@ -14,9 +13,13 @@
   justify-content: space-between;
 }
 
+.header img {
+  width: 114px;
+}
+
 .header-introduction {
-  padding-top: 10.75rem;
-  padding-bottom: 14.12rem;
+  padding-top: calc(10.75rem - 1.5rem);
+  padding-bottom: 15.62rem;
   display: grid;
   justify-content: start;
 }
@@ -32,4 +35,79 @@
 
 .header-introduction a {
   justify-self: start;
+}
+
+@media (min-width: 1800px) {
+  .header-bg {
+    background-size: 1100px;
+    background-position: right -128px top -181px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header-bg {
+    background-position: right -422px top -110px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-bg {
+    background-image: url("../../images/image-hero-tablet@2x.webp");
+    background-size: 640.714px;
+    background-position: right -255.71px top -65.13px;
+  }
+
+  .header img {
+    width: 89px;
+  }
+
+  .header-introduction {
+    padding-top: calc(6.19rem - 1.5rem);
+    padding-bottom: 13.13rem;
+  }
+
+  .header-introduction h1 {
+    margin-bottom: 1.56rem;
+  }
+
+  .header-introduction p {
+    margin-bottom: 1.56rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-bg {
+    background-image: none;
+  }
+
+  .header-introduction {
+    padding-top: calc(2.38rem - 1.5rem);
+    padding-bottom: calc(2.38rem - 1.5rem);
+  }
+
+  .header-introduction a {
+    margin-bottom: 1.88rem;
+  }
+
+  .header-introduction::after {
+    content: "";
+    display: block;
+    width: 427px;
+    height: 401px;
+    background-image: url("../../images/image-hero-mobile@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-introduction::after {
+    width: 327px;
+    height: 301px;
+  }
+
+  .header-introduction p {
+    margin-bottom: 2.5rem;
+  }
 }

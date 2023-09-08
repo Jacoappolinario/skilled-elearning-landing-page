@@ -1,8 +1,6 @@
 .container {
   box-sizing: border-box;
-  max-width: 1140px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,4 +43,40 @@
       rgba(255, 255, 255, 0.5) 100%
     ),
     linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+.link {
+  display: inline-block;
+  color: var(--color-3);
+  font: 700 1.125rem/1.55 "Plus Jakarta Sans", sans-serif;
+}
+
+.link:hover {
+  color: var(--color-4);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    padding: 0.69rem 1.5rem;
+    font: 700 1rem/1.75 "Plus Jakarta Sans", sans-serif;
+  }
+
+  .button.secondary {
+    padding: 0.94rem 2.37rem;
+    line-height: 1.62;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
